@@ -1,6 +1,6 @@
 const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin')
 module.exports = (api, projectOptions) => {
-  const pluginOptions = projectOptions.pluginOptions['b-end-scaffold']
+  const pluginOptions = projectOptions.pluginOptions['scaffold']
   const {
     compress,
     svg,

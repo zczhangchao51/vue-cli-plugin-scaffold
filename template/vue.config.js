@@ -42,7 +42,7 @@ module.exports = {
     }
   },
   pluginOptions: {
-    'b-end-scaffold': {
+    'scaffold': {
       // 自动gzip静态资源，上七牛的情况下不需要这个
       // https://github.com/webpack-contrib/compression-webpack-plugin
       compress: useCDN
@@ -126,10 +126,10 @@ module.exports = {
       patterns: [
         <%_ if(rootOptions.cssPreprocessor === 'stylus') { _%>
         path.resolve(__dirname, 'src/assets/styles/config.styl'),
-        path.resolve(__dirname, 'src/assets/styles/helper.styl')
+        path.resolve(__dirname, 'src/assets/styles/mixins.styl')
         <%_ } else { _%>
         path.resolve(__dirname, 'src/assets/styles/config.scss'),
-        path.resolve(__dirname, 'src/assets/styles/helper.scss')
+        path.resolve(__dirname, 'src/assets/styles/mixins.scss')
         <%_ } _%>
       ]
     }
