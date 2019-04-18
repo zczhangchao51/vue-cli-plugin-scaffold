@@ -35,7 +35,7 @@ npm install -g @vue/cli
       "config": "standard",
       "lintOn": ["save", "commit"]
     },
-    "vue-cli-plugin-b-end-scaffold": {
+    "vue-cli-plugin-scaffold": {
       "version": "git+ssh://git@github.com:zczhangchao51/vue-cli-plugin-scaffold.git"
     },
     "vue-cli-plugin-style-resources-loader": {
@@ -49,3 +49,15 @@ npm install -g @vue/cli
   "cssPreprocessor": "sass"
 }
 ```
+
+- 3.初始化项目
+
+```shell
+vue create <project-name> --preset <刚刚创建的预置文件路径>
+```
+
+- 4.目前只提供了移动端开箱即用的版本，如果需要在别的端使用需要剔除不需要的模块组件并引入 element 等，其余内容是通用的不需要修改
+
+## 更新日志
+
+请看[CHANGELOG](https://github.com/zczhangchao51/vue-cli-plugin-scaffold/blob/master/CHANGELOG.md)
