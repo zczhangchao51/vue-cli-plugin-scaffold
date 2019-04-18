@@ -1,0 +1,28 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "html"
+  ],
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 80
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    }
+  },
+  "prettier.disableLanguages": ["vue"],
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.semi": false,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.parser": "flow",
+  "editor.formatOnSave": true
+}
