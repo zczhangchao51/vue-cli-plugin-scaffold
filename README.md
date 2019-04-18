@@ -8,7 +8,7 @@
 
 - 开箱即用的移动端端开发环境
 
-- 预渲染，骨架屏，七牛等项目优化方法
+- 预渲染，骨架屏，上传 cdn 等项目优化方法
 
 - 合理的目录结构
 
@@ -36,7 +36,7 @@ npm install -g @vue/cli
       "lintOn": ["save", "commit"]
     },
     "vue-cli-plugin-b-end-scaffold": {
-      "version": ""
+      "version": "git+ssh://git@github.com:zczhangchao51/vue-cli-plugin-scaffold.git"
     },
     "vue-cli-plugin-style-resources-loader": {
       "version": "^0.1.3",
