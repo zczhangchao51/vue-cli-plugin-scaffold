@@ -1,0 +1,40 @@
+@import './config';
+@mixin text-ellipsis($lines: 1) {
+  @if $lines==1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin flex-scroll {
+  -webkit-overflow-scrolling: touch;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin round($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}

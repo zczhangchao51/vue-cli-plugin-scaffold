@@ -1,0 +1,13 @@
+{
+  "name": "vue-cli-plugin-scaffold",
+  "version": "1.0.0",
+  "description": "项目初始化脚手架",
+  "main": "index.js",
+  "keywords": [
+    "脚手架"
+  ],
+  "author": "zhangchao",
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.5"
+  }
+}

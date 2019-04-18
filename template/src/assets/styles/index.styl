@@ -1,0 +1,14 @@
+@require './config'
+@require './mixins'
+@require './helper'
+
+*, *::before, *::after
+  box-sizing border-box
+body
+  line-height 1.1
+  color $textColor
+  font-size $baseTextSize
+h1, h2, h3, h4, h5, h6
+  color $titleColor
+  margin-bottom 10px
+  font-weight bold

@@ -1,0 +1,79 @@
+@require './config'
+
+hover($color = #f00)
+  &:hover
+    background $color
+clearfix()
+  &:after
+    display block
+    visibility hidden
+    clear both
+    height 0
+    content '.'
+  zoom 1
+text-ellipsis($lines = 1)
+  if ($lines == 1)
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+  else
+    overflow hidden
+    text-overflow ellipsis
+    display -webkit-box
+    -webkit-line-clamp $lines
+    -webkit-box-orient vertical
+flex-scroll()
+  -webkit-overflow-scrolling touch
+  flex-grow 1
+  overflow-y scroll
+flex-column-center()
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+flex-row-center()
+  display flex
+  justify-content center
+  align-items center
+round($size)
+  width $size
+  height $size
+  border-radius 50%
+underline($width, $height = 2px, bgColor = $themeColor)
+  position relative
+  &:after
+    content ''
+    display block
+    background-color bgColor
+    position absolute
+    width $width
+    height $height
+    bottom -10px
+    border-radius (@height / 2)
+    left 50%
+    transform translate(-50%, 0)
+    z-index 1
+background-fit($url, $type = jpg, $size = cover)
+  background-repeat no-repeat
+  background-position center center
+  background-size $size
+  background-image url($url + '.' + $type)
+  @media only screen and (-webkit-min-device-pixel-ratio: 2)
+    background-image url($url + '@2x.' + $type)
+  @media only screen and (-webkit-min-device-pixel-ratio: 3)
+    background-image url($url + '@3x.' + $type)
+background-media($url, $one, $two, $three, $type = jpg)
+  background-repeat no-repeat
+  background-position center center
+  background-size cover
+  background-image url($url + $one + '.' + $type)
+  if ($two)
+    @media only screen and (-webkit-min-device-pixel-ratio: 2)
+      background-image url($url + $two + '.' + $type)
+  if ($three)
+    @media only screen and (-webkit-min-device-pixel-ratio: 3)
+      background-image url($url + $three + '.' + $type)
+background-cover()
+  background-repeat no-repeat
+  background-position center center
+  background-size cover
