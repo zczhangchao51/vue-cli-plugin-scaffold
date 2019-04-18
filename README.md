@@ -36,7 +36,7 @@ npm install -g @vue/cli
       "lintOn": ["save", "commit"]
     },
     "vue-cli-plugin-scaffold": {
-      "version": "git+ssh://git@github.com:zczhangchao51/vue-cli-plugin-scaffold.git"
+      "version": "git+https://github.com/zczhangchao51/vue-cli-plugin-scaffold.git"
     },
     "vue-cli-plugin-style-resources-loader": {
       "version": "^0.1.3",
