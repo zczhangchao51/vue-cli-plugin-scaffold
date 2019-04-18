@@ -21,6 +21,7 @@ module.exports = (api, options, rootOptions) => {
       axios: '^0.18.0',
       koa: '^2.5.2',
       vuelidate: '^0.7.4',
+      '@kitten-team/env-inject': '^1.1.0',
       'epic-spinners': '^1.0.2',
       'koa-static': '^5.0.0',
       'vuex-router-sync': '^5.0.0'
